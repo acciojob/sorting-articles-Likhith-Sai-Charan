@@ -1,26 +1,24 @@
-/*  your css code here. If applicable */
-body{
-	font-family: Arial, sans-serif;
-	background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no repeat center center fixed;
-	background-size: cover;
-	margin: 0;
-	padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 2rem;
 }
 
-ul#band{
-	background-color: rgba(255, 255, 255, 0.9);
-	max-width: 400px;
-	margin: auto;
-	padding: 1rem;
-	border-radius: 10px;
-	list-style-type: square;
+ul#band {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  list-style-type: square;
 }
 
-ul#band li{
-	padding:10px;
-	border-bottom: 1px solid #ddd;
+ul#band li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
-
 
 ul#band li:last-child {
   border-bottom: none;

@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
   'The Plot in You',
   'The Devil Wears Prada',
@@ -15,17 +14,20 @@ const bands = [
   'An Old Dog'
 ];
 
+// Strip 'A', 'An', 'The' from beginning for sorting purposes
 function stripArticle(bandName) {
   return bandName.replace(/^(a |an |the )/i, '').trim();
 }
 
-const sortedBands = bands.sort((a, b) => {
+// Sort by ignoring leading articles
+const sortedBands = bands.slice().sort((a, b) => {
   return stripArticle(a).localeCompare(stripArticle(b));
 });
 
-const ul = document.getElementById('band');
+// Append sorted list to <ul>
+const ul = document.getElementById("band");
 sortedBands.forEach(band => {
-  const li = document.createElement('li');
+  const li = document.createElement("li");
   li.textContent = band;
   ul.appendChild(li);
 });
